@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, viewport-fit=cover"
+	>
+	<meta name="description" content="The Bookly page you were looking for could not be found.">
+	<title>Page not found | Bookly</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/error.css">
+</head>
+
+<body data-page="404" data-shell="off">
+	<main class="error-page">
+		<header class="error-topbar">
+			<a class="error-brand" href="feed.html" aria-label="Bookly home">
+				<img src="assets/images/bookly-icon.png" alt="">
+				<span class="brand">Bookly</span>
+			</a>
+
+			<button
+				class="icon-btn"
+				type="button"
+				data-theme-toggle
+				aria-label="Switch theme"
+			>
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+					<path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2z"/>
+				</svg>
+			</button>
+		</header>
+
+		<section class="error-content" aria-labelledby="error-title">
+			<div class="error-copy">
+				<p class="error-kicker">Error 404 <span aria-hidden="true">/</span> Missing page</p>
+				<h1 id="error-title">This page wandered<br><em>off the shelf.</em></h1>
+				<p class="error-message">
+					The link may be out of date, or this chapter has not been written yet.
+					Let us get you back to the good stuff.
+				</p>
+				<a class="btn btn-primary btn-lg error-action" href="feed.html">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/>
+						<path d="M9 21v-7h6v7"/>
+					</svg>
+					Return to your feed
+				</a>
+			</div>
+
+			<div class="error-illustration" aria-hidden="true">
+				<div class="error-shelf-note">
+					<span>404</span>
+					<small>out of<br>place</small>
+				</div>
+				<div class="error-books">
+					<span class="error-book error-book-one"></span>
+					<span class="error-book error-book-two"></span>
+					<span class="error-book error-book-three"></span>
+					<span class="error-book error-book-four"></span>
+					<span class="error-book error-book-five"></span>
+				</div>
+				<div class="error-shelf"></div>
+				<div class="error-shelf-shadow"></div>
+			</div>
+		</section>
+
+		<footer class="error-footer">Books <span aria-hidden="true">·</span> Readers <span aria-hidden="true">·</span> Conversations</footer>
+	</main>
+
+	<script src="assets/js/theme.js"></script>
+	<script>
+		document.querySelector("[data-theme-toggle]")?.addEventListener(
+			"click",
+			toggleTheme
+		);
+	</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
    shared formatting helpers. No endpoint, payload or auth scheme is changed.
    ========================================================================== */
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = String(window.BOOKLY_API_URL || "").replace(/\/$/, "");
 
 const STORAGE_KEYS = {
     token: "access_token",

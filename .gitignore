@@ -3,13 +3,13 @@ __pycache__/
 *.py[cod]
 
 # Virtual environment
-.venv/
+backend/.venv/
 
 # Environment variables
-.env
+backend/.env
 
 # Uploaded files
-uploads/
+backend/uploads/
 
 # IDE
 .vscode/
@@ -25,4 +25,4 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+backend/.venv

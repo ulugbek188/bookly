@@ -11,3 +11,12 @@ DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_NAME = os.getenv("DB_NAME")
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT")
+
+CORS_ORIGINS = [
+	origin.strip()
+	for origin in os.getenv(
+		"CORS_ORIGINS",
+		"http://127.0.0.1:5500,http://localhost:5500",
+	).split(",")
+	if origin.strip()
+]
