@@ -661,7 +661,7 @@ function openAccountMenu() {
 
             removeToken();
 
-            window.location.replace("register.html");
+            window.location.replace("index.html");
         } catch (error) {
             toast(error.message);
         }
